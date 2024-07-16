@@ -6,8 +6,8 @@ Gem::Specification.new do |spec|
   spec.authors     = ["snmmaurya"]
   spec.email       = ["snmspace@gmail.com"]
   spec.homepage    = "https://github.com/snmmaurya/snm-enum-transition"
-  spec.summary     = "Summary of Snm::Enum::Transition."
-  spec.description = "Description of Snm::Enum::Transition."
+  spec.summary     = "Active Record ENUM based state machine"
+  spec.description = "Active Record ENUM based state machine. Whether you can control enum transation from one state to another state. Suppose you have an user model and you want to once user has been rejected he can't be verified, You can achive this job easily using this library."
   spec.license     = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the "allowed_push_host"
@@ -24,3 +24,4 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "rails", ">= 7.0.8.4"
 end
+

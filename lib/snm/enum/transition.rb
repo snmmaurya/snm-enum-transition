@@ -31,7 +31,7 @@ module Snm
         self.class.name.constantize.instance_variable_get('@enum_transition_columns').each do |column|
           if !self.new_record?  && self.send("#{column}_changed?")
             unless self.respond_to? "snm_#{self.send("#{column}_was")}_to_#{self.send("#{column}")}"
-              self.errors.add(:base, "#{column.upcase} can't be changed from #{self.send("#{column}_was")} to #{self.send("#{column}")}")
+              self.errors.add(:base, "#{column.capitalize} can't be changed from #{self.send("#{column}_was")} to #{self.send("#{column}")}")
             end
           end
         end
