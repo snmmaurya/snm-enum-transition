@@ -1,8 +1,8 @@
 PATH
   remote: .
   specs:
-    snm-enum-transition (0.1.0)
-      rails (>= 7.0.8.4)
+    snm-enum-transition (0.1.2)
+      rails (>= 5.0)
 
 GEM
   remote: https://rubygems.org/
